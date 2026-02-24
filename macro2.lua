@@ -1,29 +1,17 @@
 
 local weapon = 4
 
-local times=1
-
-
-
-
-
-
 local tap = 70
 
 local mult = 0.35
-local mult_n =mult+0.085
-
-
-
+local mult_n = mult + 0.085
 
 EnablePrimaryMouseButtonEvents(true);
 local recoil = false
-local gun = 0
 function OnEvent(event, arg)
 	if (event == "MOUSE_BUTTON_PRESSED" and arg == weapon) or
 		(event == "G_PRESSED" and arg == weapon_Keyboard) then
 		recoil = not recoil
-		gun = arg
 		if (recoil == false) then
 			OutputLogMessage("OFF-weapon\n")
 			if IsKeyLockOn("scrolllock") then
@@ -36,22 +24,15 @@ function OnEvent(event, arg)
 			end
 		end
 
-
-		
 	elseif weapon == weapon or weapon == weapon_Keyboard then
 		if recoil == true then
 			if (IsModifierPressed("lctrl")) then
-		
+
 				Weapon_()
-			
-				
-				
+
 			else
 				Weapon()
-			
-			
-			
-				
+
 			end
 		end
 	end
@@ -70,3144 +51,3027 @@ function OnEvent(event, arg)
 		if IsMouseButtonPressed(3) then
 			repeat
 				Sleep(17)
-				
+
 				if IsMouseButtonPressed(1) then
-			
+
 					repeat
-						csm(8)
-				
+						Sleep(1)
+
 					if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-				
-				
+
 						MoveMouseRelativeFractional(0, (tap+10) * mult_n)
-				
-						
-						
+
 						Sleep(17)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 7 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
 
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 7.5 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 8.75 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 
+						MoveMouseRelativeFractional(0, 10 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 10 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
-
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
-						
-						
-						
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
-						
-						
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
-						
-						
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
-						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0, 11 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0, 11.25 * mult_n)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						
-						
-
-						
-
-
-						
-
-						
-
-
-						
-
-
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+						MoveMouseRelativeFractional(0, 11.25 * mult_n)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						if not IsMouseButtonPressed(1) then break end
 
@@ -3242,3059 +3106,3011 @@ function OnEvent(event, arg)
 				if not IsMouseButtonPressed(3) then break end
 				if IsMouseButtonPressed(1) then
 					repeat
-						csm(8)
-	
+						Sleep(1)
+
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						
-					
-
 
 						MoveMouseRelativeFractional(0 * mult, tap* mult)
-		
-						csm(8)
+
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						
+
 						MoveMouseRelativeFractional(0 * mult,8 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
-
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
-
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
-
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-
-
-
 
 						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
 
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 6.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.25 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 7.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 8.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 9.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-
-
 
 						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
 
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 9.75 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
+
 						MoveMouseRelativeFractional(0 * mult, 11.25 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
 
 						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
+						Sleep(1)
 						if not IsMouseButtonPressed(1) then break end
 						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
-						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
-						csm(8)
-						if not IsMouseButtonPressed(1) then break end
-						if not IsMouseButtonPressed(3) then break end
-						
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
+
+						MoveMouseRelativeFractional(0 * mult, 12.5 * mult)
+						Sleep(1)
+						if not IsMouseButtonPressed(1) then break end
+						if not IsMouseButtonPressed(3) then break end
 
 						MoveMouseRelativeFractional(0 * mult, 0)
 						if not
@@ -6313,14 +6129,3 @@ function OnEvent(event, arg)
 		end
 
 	end
-
-
-
-
-
-	function csm(time)  local start_time = GetRunningTime()     while GetRunningTime()-start_time <= time do     end end 
-	
-
-
-end 
-
